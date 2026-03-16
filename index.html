@@ -291,7 +291,7 @@ footer{background:var(--dark);color:var(--white)}
           <div class="svc-card-point"><span class="svc-point-n">03</span><span class="svc-point-t">Office War 인재 식별 체계</span></div>
           <div class="svc-card-point"><span class="svc-point-n">04</span><span class="svc-point-t">내부 AI 역량 평가·재배치 시스템</span></div>
         </div>
-        <button class="ow-btn" onclick="openOfficeWar()">Office War 자세히 보기 →</button>
+        <a href="https://officewar.vercel.app/" target="_blank" class="ow-btn">Office War 자세히 보기 →</a>
       </div>
     </div>
   </div>
@@ -334,7 +334,7 @@ footer{background:var(--dark);color:var(--white)}
       <h2 class="section-title">함께<br>고민을 시작하겠습니다.</h2>
       <p class="section-subtitle">조직의 상황과 고민을 알려주시면, 빠르게 연락드리겠습니다.</p>
       <div class="contact-info">
-        <div class="info-item"><span class="info-label">Email</span><span class="info-val">yjk9793@gmail.com</span></div>
+        <div class="info-item"><span class="info-label">Email</span><span class="info-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="037a69683a343a3043646e626a6f2d606c6e">[email&#160;protected]</a></span></div>
         <div class="info-item"><span class="info-label">Service</span><span class="info-val">컨설팅 · 교육 · 프로젝트</span></div>
         <div class="info-item"><span class="info-label">Response</span><span class="info-val">영업일 기준 1일 이내 회신</span></div>
       </div>
@@ -354,7 +354,7 @@ footer{background:var(--dark);color:var(--white)}
           <label for="message">문의사항</label>
         </div>
         <div class="form-footer">
-          <span class="form-note">yjk9793@gmail.com 으로 전달됩니다.</span>
+          <span class="form-note"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="08716263313f313b486f65696164266b6765">[email&#160;protected]</a> 으로 전달됩니다.</span>
           <button type="submit" class="btn-submit" id="submitBtn">문의 보내기</button>
         </div>
       </form>
@@ -370,7 +370,7 @@ footer{background:var(--dark);color:var(--white)}
     </div>
     <div class="footer-col"><h4>Service</h4><ul><li><a href="#services">HR 전략 컨설팅</a></li><li><a href="#services">리더·HR 교육</a></li><li><a href="#services">AI 채용 시스템</a></li><li><a href="#services">Office War</a></li></ul></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="#whynow">왜 deeploy인가</a></li><li><a href="#insight">인사이트</a></li><li><a href="#contact">문의하기</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:yjk9793@gmail.com">yjk9793@gmail.com</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="/cdn-cgi/l/email-protection#daa3b0b1e3ede3e99abdb7bbb3b6f4b9b5b7"><span class="__cf_email__" data-cfemail="48312223717f717b082f25292124662b2725">[email&#160;protected]</span></a></li></ul></div>
   </div>
   <div class="footer-bottom">
     <span class="footer-copy">© 2025 deeploy. All rights reserved.</span>
@@ -2864,7 +2864,7 @@ nav.scrolled {
   </div>
 </section>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function sendMail(e) {
   e.preventDefault();
   const name    = document.getElementById('cf-name').value.trim();
@@ -4304,18 +4304,4 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
   btn.disabled=true;btn.textContent='전송 중...';
   var subject=encodeURIComponent('[deeploy 문의] '+document.getElementById('org').value+' - '+document.getElementById('name').value);
   var body=encodeURIComponent('소속: '+document.getElementById('org').value+'
-성명: '+document.getElementById('name').value+'
-연락처: '+document.getElementById('phone').value+'
-이메일: '+document.getElementById('email').value+'
-
-문의사항:
-'+document.getElementById('message').value);
-  window.location.href='mailto:yjk9793@gmail.com?subject='+subject+'&body='+body;
-  setTimeout(function(){
-    document.getElementById('contactForm').style.display='none';
-    document.getElementById('formSuccess').style.display='block';
-  },800);
-});
-</script>
-</body>
-</html>
+성명: '+docume
