@@ -46,7 +46,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,2
 .hero-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .hero-particles span{position:absolute;border-radius:50%;background:#fff;animation:floatDot 6s ease-in-out infinite}
 #hero{min-height:100vh;background:var(--black);display:flex;align-items:center;position:relative;overflow:hidden;padding-top:104px}
-.hero-bg-text{position:absolute;font-family:var(--font-en);font-weight:700;font-size:clamp(120px,18vw,280px);letter-spacing:-.04em;line-height:1;color:rgba(255,255,255,0.03);top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;user-select:none;pointer-events:none}
+@keyframes bgTextAnim{
+  0%   {opacity:.03;transform:translate(-50%,-50%) scale(1)    skewX(0deg);letter-spacing:-.04em}
+  20%  {opacity:.09;transform:translate(-50%,-50%) scale(1.04) skewX(-1deg);letter-spacing:.02em}
+  40%  {opacity:.05;transform:translate(-50%,-50%) scale(1.01) skewX(1deg);letter-spacing:-.02em}
+  60%  {opacity:.11;transform:translate(-50%,-50%) scale(1.06) skewX(0deg);letter-spacing:.05em}
+  80%  {opacity:.04;transform:translate(-50%,-50%) scale(.98)  skewX(-1deg);letter-spacing:-.04em}
+  100% {opacity:.03;transform:translate(-50%,-50%) scale(1)    skewX(0deg);letter-spacing:-.04em}
+}
+.hero-bg-text{position:absolute;font-family:var(--font-en);font-weight:700;font-size:clamp(120px,18vw,280px);line-height:1;color:#fff;top:50%;left:50%;white-space:nowrap;user-select:none;pointer-events:none;animation:bgTextAnim 6s ease-in-out infinite}
 .hero-content{max-width:1280px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;width:100%}
 .hero-logo-big{margin-bottom:20px;margin-top:-20px}
 .hero-logo-big img{width:min(520px,70vw)}
@@ -270,15 +278,16 @@ footer{background:var(--dark);color:var(--white)}
       </div>
       <div class="svc-card">
         <div class="svc-card-num">02 — Education</div>
-        <h3 class="svc-card-title">AI 시대<br>리더·HR 교육</h3>
-        <p class="svc-card-desc">AI와 함께 일하는 방식, AI를 활용하는 채용과 평가, 조직 변화를 이끄는 HR 리더십. 실전 중심의 워크숍과 강연을 제공합니다.</p>
-        <div class="svc-card-tags"><span class="svc-card-tag">임원 워크숍</span><span class="svc-card-tag">HR 실무 교육</span><span class="svc-card-tag">AI 활용</span><span class="svc-card-tag">조직 강연</span></div>
+        <h3 class="svc-card-title">AI 시대<br>리더·전문가 교육</h3>
+        <p class="svc-card-desc">AI 리더십 전환부터 AI 에이전트형 인재 양성, 바이브코딩 직무과정까지. 실전 중심의 교육으로 조직과 개인의 AI 경쟁력을 높입니다.</p>
+        <div class="svc-card-tags"><span class="svc-card-tag">AI 리더십</span><span class="svc-card-tag">에이전트형 인재</span><span class="svc-card-tag">바이브코딩</span><span class="svc-card-tag">직무과정</span></div>
         <div class="svc-card-points">
-          <div class="svc-card-point"><span class="svc-point-n">01</span><span class="svc-point-t">리더십 전환 임원 워크숍</span></div>
-          <div class="svc-card-point"><span class="svc-point-n">02</span><span class="svc-point-t">HR 실무 AI 활용 심화 과정</span></div>
-          <div class="svc-card-point"><span class="svc-point-n">03</span><span class="svc-point-t">전사 피플전략 강연</span></div>
-          <div class="svc-card-point"><span class="svc-point-n">04</span><span class="svc-point-t">AI 채용·평가 윤리 교육</span></div>
+          <div class="svc-card-point"><span class="svc-point-n">01</span><span class="svc-point-t">AI 리더십 전환 임원 워크숍</span></div>
+          <div class="svc-card-point"><span class="svc-point-n">02</span><span class="svc-point-t">AI 에이전트형 인재 양성 과정</span></div>
+          <div class="svc-card-point"><span class="svc-point-n">03</span><span class="svc-point-t">바이브코딩 직무 과정</span></div>
+          <div class="svc-card-point"><span class="svc-point-n">04</span><span class="svc-point-t">AI 시대 조직 전환 강연</span></div>
         </div>
+        <a href="https://vibecoding-bw9ii.vercel.app/" target="_blank" class="ow-btn" style="margin-top:28px">바이브코딩 과정 보기 →</a>
       </div>
       <div class="svc-card">
         <div class="svc-card-num">03 — Project</div>
